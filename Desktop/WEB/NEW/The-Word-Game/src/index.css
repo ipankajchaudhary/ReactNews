@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  border: 2px solid black;
+  margin-top: 50px;
+  width: 70%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* width: 90%; */
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .imp{
+    border-bottom: 3px solid #0d6efd;
+    white-space:pre;
+    display: flex;
+    /* padding-right: 0px; */
+    /* text-align: center; */
+  }
+  .result{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+  }
+  .container{
+    border: 2px solid black;
+    margin-top: 50px;
+    width: 90%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top: 5px;
+  }
+  
+}
+
+@media (min-width: 992px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .imp{
+    border-right: 3px solid #0d6efd;
+    white-space: pre-line;
+    /* display: flex; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  .result{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+  }
+  .container{
+    border: 2px solid black;
+    margin-top: 50px;
+    width: 70%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+  }
+
+  .implast{
+    white-space: pre-line;
+    /* display: flex; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+}
+
